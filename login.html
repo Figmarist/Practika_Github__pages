@@ -84,7 +84,6 @@
 		<meta name="theme-color" content="#ffffff" />
 		<title>Заявка</title>
 	</head>
-
 	<body>
 		<header class="header">
 			<div class="header__wrapper wrapper">
@@ -122,86 +121,63 @@
 		<main class="main">
 			<div class="main__sub-title title__right">
 				<div class="main__white-box main__white-box-left"></div>
-				<h3>Что вы получите выбрав нас</h3>
+				<h3>Отследить заказ</h3>
+			</div>
+
+			<div
+				style="
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					margin-bottom: 32px;
+					font-size: 24px;
+					font-weight: bold;
+				"
+			>
+				Вы можете авторизоваться и отследить ваш заказ онлайн.
 			</div>
 
 			<div class="wrapper">
 				<div class="order">
-					<form class="form">
+					<form style="margin-bottom: 32px" class="form">
 						<div class="form__text">
-							<div class="form__text-title">Оставьте заявку</div>
+							<div class="form__text-title">Вход в аккаунт</div>
 							<div class="form__text-description">
-								Мы направим вам предложение, проконсультируем по вопросам
-								качества, техническим характеристикам конструкций и их
-								сравнительному анализу
+								Вы можете авторизоваться и отследить ваш заказ онлайн.
 							</div>
 
 							<div class="form__text-label">
-								<label for="">Ваше имя:</label>
+								<label for="">Логин: </label>
 								<input
 									type="text"
-									name="name"
-									placeholder="Введите имя"
+									id="loginInput"
+									name="login"
+									placeholder="Введите логин"
 									required
 								/>
-								<label for="">Номер телефона: </label>
+								<label for="">Пароль: </label>
 								<input
-									type="text"
-									name="name"
-									placeholder="Введите номер телефона"
-									required
-								/>
-								<label for="">Название компании: </label>
-								<input
-									type="text"
-									name="name"
-									placeholder="Введите название компании"
+									type="password"
+									id="passwordInput"
+									name="password"
+									placeholder="Введите пароль"
 									required
 								/>
 							</div>
-							<button class="button__form">Отправить</button>
+							<button id="loginButton" class="button__form">Войти</button>
+							<a
+								href="./register.html"
+								style="margin-top: 15px"
+								class="header__button button"
+							>
+								Зарегистрироваться
+							</a>
 						</div>
 					</form>
-
-					<div class="order__text">
-						<div class="order__text-div">
-							<div class="order__text-num">01</div>
-							<div class="order__text-num-info">
-								Эскиз фасада с цветовыми решениями
-							</div>
-						</div>
-
-						<div class="order__text-div">
-							<div class="order__text-num">02</div>
-							<div class="order__text-num-info">Схема раскладки</div>
-						</div>
-
-						<div class="order__text-div">
-							<div class="order__text-num">03</div>
-							<div class="order__text-num-info">Альбом технических решений</div>
-						</div>
-
-						<div class="order__text-div">
-							<div class="order__text-num">04</div>
-							<div class="order__text-num-info">
-								Подробная спецификация материалов
-							</div>
-						</div>
-
-						<div class="order__text-div">
-							<div class="order__text-num">05</div>
-							<div class="order__text-num-info">
-								Выгодное предложение на работы и материалы
-							</div>
-						</div>
-
-						<button class="order__text-button">Пример пакета документов</button>
-					</div>
 				</div>
-
-				<img src="img/4.png" class="order__img" alt="" />
 			</div>
 		</main>
+
 		<footer class="footer">
 			<div class="footer__wrapper wrapper">
 				<div class="footer__logo logo">
@@ -244,5 +220,6 @@
 				<div class="footer__div-empty"></div>
 			</div>
 		</footer>
+		<script src="./js/login.js"></script>
 	</body>
 </html>

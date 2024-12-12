@@ -122,85 +122,24 @@
 		<main class="main">
 			<div class="main__sub-title title__right">
 				<div class="main__white-box main__white-box-left"></div>
-				<h3>Что вы получите выбрав нас</h3>
+				<h3>Отследить заказ</h3>
+			</div>
+			<!-- ////////////////// -->
+			<div style="margin-left: 7.5em">
+				<p style="font-size: 24px; font-weight: bold; margin-bottom: 5px">
+					Вы вошли в аккаунт:
+				</p>
+				<p style="font-size: 24px; margin-bottom: 15px" id="userLogin"></p>
+				<button id="logoutButton" class="header__button button">
+					Выйти из аккаунта
+				</button>
 			</div>
 
-			<div class="wrapper">
-				<div class="order">
-					<form class="form">
-						<div class="form__text">
-							<div class="form__text-title">Оставьте заявку</div>
-							<div class="form__text-description">
-								Мы направим вам предложение, проконсультируем по вопросам
-								качества, техническим характеристикам конструкций и их
-								сравнительному анализу
-							</div>
-
-							<div class="form__text-label">
-								<label for="">Ваше имя:</label>
-								<input
-									type="text"
-									name="name"
-									placeholder="Введите имя"
-									required
-								/>
-								<label for="">Номер телефона: </label>
-								<input
-									type="text"
-									name="name"
-									placeholder="Введите номер телефона"
-									required
-								/>
-								<label for="">Название компании: </label>
-								<input
-									type="text"
-									name="name"
-									placeholder="Введите название компании"
-									required
-								/>
-							</div>
-							<button class="button__form">Отправить</button>
-						</div>
-					</form>
-
-					<div class="order__text">
-						<div class="order__text-div">
-							<div class="order__text-num">01</div>
-							<div class="order__text-num-info">
-								Эскиз фасада с цветовыми решениями
-							</div>
-						</div>
-
-						<div class="order__text-div">
-							<div class="order__text-num">02</div>
-							<div class="order__text-num-info">Схема раскладки</div>
-						</div>
-
-						<div class="order__text-div">
-							<div class="order__text-num">03</div>
-							<div class="order__text-num-info">Альбом технических решений</div>
-						</div>
-
-						<div class="order__text-div">
-							<div class="order__text-num">04</div>
-							<div class="order__text-num-info">
-								Подробная спецификация материалов
-							</div>
-						</div>
-
-						<div class="order__text-div">
-							<div class="order__text-num">05</div>
-							<div class="order__text-num-info">
-								Выгодное предложение на работы и материалы
-							</div>
-						</div>
-
-						<button class="order__text-button">Пример пакета документов</button>
-					</div>
-				</div>
-
-				<img src="img/4.png" class="order__img" alt="" />
+			<div>
+				<!-- Здесь будет таблица -->
 			</div>
+
+			<!-- //////////////// -->
 		</main>
 		<footer class="footer">
 			<div class="footer__wrapper wrapper">
@@ -245,4 +184,5 @@
 			</div>
 		</footer>
 	</body>
+	<script src="./js/trackOrder.js"></script>
 </html>
